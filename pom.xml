@@ -1,0 +1,47 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.myorg</groupId>
+	<artifactId>employee-management-service</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<description>Employee Management API</description>
+	<properties>
+		<myMavenRepo.read.url>https://mymavenrepo.com/repo/TfTyniN5PiM3Nvi3k3sI/</myMavenRepo.read.url>
+		<jackson.version>2.9.1</jackson.version>
+	</properties>
+	<parent>
+		<groupId>com.lixo.core</groupId>
+		<artifactId>lixo-microservices-strater-parent</artifactId>
+		<version>2.2.0-SNAPSHOT</version>
+		<relativePath>..</relativePath>
+	</parent>
+	<dependencies>
+
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+		<dependency>
+			<artifactId>lixo-aop-utility</artifactId>
+			<groupId>com.lixo.aop</groupId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+	<repositories>
+		<repository>
+			<id>myMavenRepo.read</id>
+			<url>https://mymavenrepo.com/repo/TfTyniN5PiM3Nvi3k3sI/</url>
+		</repository>
+	</repositories>
+</project>
